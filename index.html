@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mr potato head</title>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>  var zindie=1;
+    $(function() { 
+      $('img' ).draggable();   
+      $('img').mousedown(function() {zindie+=1;
+        $(this).css("z-index", zindie);}) 
+      $('img').dblclick(function(){zindie=1;
+        $(this).css("z-index", zindie);
+    })
+  });
+  </script>
+
+
+</head>
+
+<body>
+<body background="tom_head.jpg">
+<img src="eyeL.png" width="75" height="50">
+<img src="brow_L.png" width="96" height="81">
+<img src="eyeR.png" width="102" height="51">
+<img src="brow_R.png" width="137" height="111">
+<img src="nose.png" width="99" height="120">
+</body>
+</html>
